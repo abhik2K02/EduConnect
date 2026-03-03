@@ -1,0 +1,17 @@
+{
+  "name": "lecture-assistant",
+  "description": "A full-stack application built for Teachers to record lectures and for Students to review AI-generated summaries and chat with the lecture content.",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  },
+  "scripts": {
+    "start": "npx concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && node index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
